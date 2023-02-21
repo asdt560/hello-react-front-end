@@ -20,9 +20,9 @@
 - [📝 License](#license)
 
 
-# 📖 hello-rails-react <a name="about-project"></a>
+# 📖 hello-react-front-end <a name="about-project"></a>
 
-**hello-rails-back-end** is a rails API-only application which serves as the back end to 'hello-react-front-end'.
+**hello-react-front-end** is a react front-end application which serves as the front-end to 'hello-rails-back-end'. It allows the user to access the random greetings stored in the database associated with the Rails app.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -84,8 +84,7 @@ Clone this repository to your desired folder.
 Install this project with:
 
 ```
-  bundle install
-  rails db:migrate
+  npm install
 ```
 
 ### Usage
@@ -93,8 +92,7 @@ Install this project with:
 To run the project, execute the following commands:
 
 ```
-  pg_ctl start
-  rails server
+  npm start
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -115,7 +113,7 @@ To run the project, execute the following commands:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Additional data beyond a basic greeting**
+- [ ] **A style and organization fit to display more data**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
