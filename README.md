@@ -22,7 +22,7 @@
 
 # 📖 hello-react-front-end <a name="about-project"></a>
 
-**hello-react-front-end** is a react front-end application which serves as the front-end to 'hello-rails-back-end'. It allows the user to access the random greetings stored in the database associated with the Rails app.
+**hello-react-front-end** is a react front-end application which serves as the front-end to [hello-rails-back-end]. It allows the user to access the random greetings stored in the database associated with the Rails app.
 
 ## 🛠 Built With <a name="built-with"></a>
 
