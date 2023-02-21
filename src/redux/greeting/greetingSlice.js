@@ -3,15 +3,11 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 const getGreetingData = createAsyncThunk(
   'messages/getGreetingData',
   async () => {
-    const resp = await fetch("api/messages")
-      .then((resp) => {
-        return resp.json();
-      })
-      .then((result) => {
-        return result;
-      });
+    const resp = await fetch('api/messages')
+      .then((resp) => resp.json())
+      .then((result) => result);
     return resp;
-  }
+  },
 );
 
 const greetingSlice = createSlice({
@@ -21,10 +17,11 @@ const greetingSlice = createSlice({
     text: '',
   },
   extraReducers: (builder) => {
-    builder.addCase(getGreetingData.fulfilled, (state, action) => {
-      state.success = true;
-      state.text = action.payload.text;
-    });
+    builder.addCase(getGreetingData.fulfilled, (state, action) => ({
+      ...state,
+      success: true,
+      text: action.payload.text,
+    }));
   },
 });
 

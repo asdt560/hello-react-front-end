@@ -13,12 +13,12 @@ function Greeting() {
   return (
     <div>
       <h1>Hello, this is the randomized greeting generator:</h1>
-      <button type='button' onClick={() => dispatch(getGreetingData())}>
+      <button type="button" onClick={() => dispatch(getGreetingData())}>
         Generate Greeting
       </button>
       <h2>{content}</h2>
     </div>
-  )
+  );
 }
 
 export default Greeting;
