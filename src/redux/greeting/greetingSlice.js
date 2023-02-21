@@ -3,7 +3,7 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 const getGreetingData = createAsyncThunk(
   'messages/getGreetingData',
   async () => {
-    const resp = await fetch('api/messages')
+    const resp = await fetch('http://localhost:3000/api/messages')
       .then((resp) => resp.json())
       .then((result) => result);
     return resp;
